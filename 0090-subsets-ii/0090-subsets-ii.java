@@ -13,7 +13,7 @@ class Solution {
        
         for(int i=index; i<arr.length; i++){
             if(i>index && arr[i]==arr[i-1]) continue;
-             if(index==arr.length) break;
+            //  if(index==arr.length) break;
             ds.add(arr[i]);
             subSet(i+1, arr, ds, ans);
             ds.remove(ds.size()-1);
