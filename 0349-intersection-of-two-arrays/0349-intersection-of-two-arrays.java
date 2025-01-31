@@ -3,9 +3,9 @@ class Solution {
         int left=0,right=0;
         Arrays.sort(nums1);
         Arrays.sort(nums2);
-        HashSet<Integer> arr = new HashSet<>();
+        ArrayList<Integer> arr = new ArrayList<>();
         while(left<nums1.length && right<nums2.length){
-            if(nums1[left]==nums2[right] ){
+            if(nums1[left]==nums2[right] && !arr.contains(nums2[right])){
                 arr.add(nums1[left]);
                 left++;
                 right++;
@@ -17,6 +17,10 @@ class Solution {
                 left++;
             }
         }
-        return arr.stream().mapToInt(i -> i).toArray();
+        int[] arr2 = new int[arr.size()];
+        for (int i = 0; i < arr.size(); i++) {
+            arr2[i] = arr.get(i);
+        }
+        return arr2;
     }
 }
