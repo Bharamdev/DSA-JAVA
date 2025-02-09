@@ -24,15 +24,16 @@ class Solution {
             }
         }
 
-        int cnt3=0, cnt4=0;
+        cnt1=0;
+        cnt2=0;
         for(int i=0; i<nums.length; i++){
-            if(nums[i]==ele1) cnt3++;
-            else if(nums[i]==ele2) cnt4++;
+            if(nums[i]==ele1) cnt1++;
+            else if(nums[i]==ele2) cnt2++;
         }
-        if(cnt3>(nums.length/3)){
+        if(cnt1>(nums.length/3)){
                 ans.add(ele1);
             }
-        if(cnt4>(nums.length/3)){
+        if(cnt2>(nums.length/3)){
                 ans.add(ele2);
         }
 
