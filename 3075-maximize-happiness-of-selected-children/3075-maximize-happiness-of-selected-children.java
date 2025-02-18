@@ -5,7 +5,9 @@ class Solution {
         int n = happiness.length;
         for(int i=0; i<k; i++){
             int index = n-1-i;
-            if(happiness[index] - i <= 0) break;
+            // if(happiness[index] - i <= 0) break;
+              int happinessValue = Math.max(0, happiness[index] - i);
+            if (happinessValue == 0) break; 
             sum+= happiness[index] - i ;
             
         }
