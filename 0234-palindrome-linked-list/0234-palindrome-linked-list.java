@@ -18,8 +18,7 @@ class Solution {
         }
         temp = head;
         while(temp!= null){
-            if(temp.val != stack.peek()) return false;
-            stack.pop();
+            if(temp.val != stack.pop()) return false;
             temp=temp.next;
         }
         return true;
