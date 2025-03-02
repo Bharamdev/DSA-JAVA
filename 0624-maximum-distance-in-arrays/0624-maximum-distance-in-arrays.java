@@ -4,8 +4,8 @@ class Solution {
         int max= arrays.get(0).get(arrays.get(0).size()-1);
         int min= arrays.get(0).get(0);
         int ans=-1;
-        for(List<Integer> arr: arrays){
-            
+        for(int i=1; i<arrays.size(); i++){
+            List<Integer> arr = arrays.get(i);            
             ans = Math.max(ans,Math.abs(max-arr.get(0)));
             ans= Math.max(ans, Math.abs(arr.get(arr.size()-1) - min));
                 
