@@ -3,7 +3,6 @@ class Solution {
         HashMap<Integer,Integer> map = new HashMap<>();
         List<Integer> ans = new ArrayList<>();
         for(int[] num:nums){
-            Arrays.sort(num);
             for(int j=0; j<num.length; j++){
                 map.put(num[j], map.getOrDefault(num[j],0) + 1);
             }
@@ -13,6 +12,7 @@ class Solution {
                 ans.add(nums[0][i]);
             }
         }
+        Collections.sort(ans);
         return ans;
     }
 }
