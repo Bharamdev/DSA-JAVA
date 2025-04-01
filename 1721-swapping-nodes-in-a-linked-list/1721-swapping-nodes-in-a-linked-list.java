@@ -22,10 +22,17 @@ class Solution {
         if (k > cnt) return head; 
         int x=1;
         temp=head;
-        // while(temp!=null){
-        //     if(x==k) a=temp;
-        //     if(x==(cnt-k+1)) b=temp;
-        //     temp=temp.next;
+        while(temp!=null){
+            if(x==k) a=temp;
+            if(x==(cnt-k+1)) b=temp;
+            temp=temp.next;
+            x++;
+        }
+        //  for (int i = 1; i < k; i++) {
+        //     a = a.next;
+        // }
+        // for (int i = 1; i < cnt - k + 1; i++) {
+        //     b = b.next;
         // }
         if(a==null || b==null) return head;
         int temp2 = a.val;
