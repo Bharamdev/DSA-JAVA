@@ -28,12 +28,6 @@ class Solution {
             temp=temp.next;
             x++;
         }
-        //  for (int i = 1; i < k; i++) {
-        //     a = a.next;
-        // }
-        // for (int i = 1; i < cnt - k + 1; i++) {
-        //     b = b.next;
-        // }
         if(a==null || b==null) return head;
         int temp2 = a.val;
         a.val=b.val;
