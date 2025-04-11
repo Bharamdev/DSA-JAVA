@@ -20,6 +20,7 @@ class Solution {
         while(sb.length()>0 && sb.charAt(0)=='0'){
             sb.deleteCharAt(0);
         }
+        if(sb.isEmpty()) return "0";
         return sb.toString();
     }
 }
