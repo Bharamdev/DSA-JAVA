@@ -1,6 +1,6 @@
 class Solution {
     public int numEquivDominoPairs(int[][] dominoes) {
-        HashMap<String,Integer> map = new HashMap<>();
+        Map<String,Integer> map = new HashMap<>();
         for(int[] d: dominoes){
             int max = Math.max(d[0],d[1]);
             int min = Math.min(d[0],d[1]);
