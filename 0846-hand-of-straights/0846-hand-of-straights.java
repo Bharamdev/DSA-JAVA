@@ -1,14 +1,16 @@
 class Solution {
     public boolean isNStraightHand(int[] hand, int groupSize) {
         int n = hand.length;
+        Arrays.sort(hand);
         if(n%groupSize!=0) return false;
-        TreeMap<Integer,Integer> map = new TreeMap<>();
+        HashMap<Integer,Integer> map = new HashMap<>();
         int maxcnt = n/groupSize;
         for(int i: hand){
             map.put(i,map.getOrDefault(i,0)+1);
         }
-        while(!map.isEmpty()){
-            int num = map.firstKey();  
+        
+        for(int num : hand){
+            if(!map.containsKey(num)) continue;  
             for(int i=0;i<groupSize;i++){
                 int card = num+i;
                 if(!map.containsKey(card)) return false;
