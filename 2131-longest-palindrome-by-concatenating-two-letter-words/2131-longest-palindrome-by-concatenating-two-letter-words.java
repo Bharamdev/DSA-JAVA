@@ -12,7 +12,7 @@ class Solution {
             if(freq==0) continue;
             if(word.equals(rev) ){
                 cnt+=(freq/2)*4;
-                center=true;
+                if(freq%2==1) center=true;
             }
             else if(map.containsKey(rev) ){
                 int pair = Math.min(freq,map.get(rev)) ;
