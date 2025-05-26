@@ -6,14 +6,14 @@ class Solution {
         }
         PriorityQueue<Character> pq = new PriorityQueue<>((a,b) -> map.get(b)-map.get(a));
         pq.addAll(map.keySet());
-        String str = "";
+        StringBuilder str = new StringBuilder();
         while(!pq.isEmpty()){
             char ch = pq.poll();
             int freq = map.get(ch);
             for(int i=0;i<freq;i++){
-                str+=ch;
+                str.append(ch);
             }
         }
-        return str;
+        return str.toString();
     }
 }
