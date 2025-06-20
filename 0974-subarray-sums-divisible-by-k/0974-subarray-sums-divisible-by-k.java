@@ -8,7 +8,7 @@ class Solution {
             presum+=nums[i];
             int div = presum%k;
             if(div<0) div+=k;
-            if(map.containsKey(div)) cnt+=map.get(div);
+            cnt+=map.getOrDefault(div,0);
             map.put(div, map.getOrDefault(div,0)+1);
         }
         return cnt;
