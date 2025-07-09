@@ -12,6 +12,7 @@ class Solution {
                 else close++;
             }
             if(close>open){
+                while(s.charAt(j)!='[') j--;
                 if(s.charAt(j)=='['){
                     close--;
                     open++;
