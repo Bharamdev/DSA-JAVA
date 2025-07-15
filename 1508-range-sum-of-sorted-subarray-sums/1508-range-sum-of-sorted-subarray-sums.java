@@ -1,6 +1,6 @@
 class Solution {
     public int rangeSum(int[] nums, int n, int left, int right) {
-        int MOD = 1_000_000_007;
+        final int MOD = 1_000_000_007;
         List<Integer> l = new ArrayList<>();
         for(int i=0;i<n;i++){
             int sum=0;
