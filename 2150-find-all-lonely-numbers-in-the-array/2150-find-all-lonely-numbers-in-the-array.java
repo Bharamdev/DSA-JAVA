@@ -4,7 +4,7 @@ class Solution {
         for(int num: nums) map.put(num,map.getOrDefault(num,0)+1);
         List<Integer> res = new ArrayList<>();
         for(int key: map.keySet()){
-            if(map.get(key)<2 && (!map.containsKey(key-1) && !map.containsKey(key+1))){
+            if(map.get(key)==1 && (!map.containsKey(key-1) && !map.containsKey(key+1))){
                 res.add(key);
             }
         }
