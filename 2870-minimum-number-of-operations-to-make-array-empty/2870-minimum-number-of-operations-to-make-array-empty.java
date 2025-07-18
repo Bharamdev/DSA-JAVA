@@ -5,10 +5,7 @@ class Solution {
         int cnt=0;
         for( int value: map.values()){
             if(value==1) return -1;
-            if(value%3==0){
-                cnt+=value/3;
-            }
-            else cnt+= value/3 +1;
+            cnt+= (value+2)/3;
         }
         return cnt;
     }
