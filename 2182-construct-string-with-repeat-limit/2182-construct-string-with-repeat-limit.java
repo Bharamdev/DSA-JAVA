@@ -24,7 +24,7 @@ class Solution {
                 if(pq.isEmpty()) break;
                 pair next = pq.poll();
                 str.append(next.ch);
-                if(next.freq>0)pq.offer(new pair(next.ch,next.freq-1));
+                if(next.freq-1>0) pq.offer(new pair(next.ch,next.freq-1));
                 pq.offer(new pair(ch,freq));
             }
         }
