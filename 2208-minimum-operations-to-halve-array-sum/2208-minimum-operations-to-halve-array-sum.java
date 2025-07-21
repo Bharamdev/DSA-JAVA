@@ -10,8 +10,9 @@ class Solution {
         double target=sum/2;
         while(sum>target){
             double max= pq.poll();
-            sum-= max/2.0;
-            pq.offer(max/2);
+            double half = max/2;
+            sum-= half;
+            pq.offer(half);
             cnt++;
         }
         return cnt;
