@@ -7,7 +7,7 @@ class Solution {
         while(pq.size()>=2 && pq.peek()<k){
             long x = pq.poll();
             long y=pq.poll();
-            long updated = Math.min(x,y)*2 + Math.max(x,y);
+            long updated = x*2 + y;
             pq.offer(updated);
             cnt++; 
         }
