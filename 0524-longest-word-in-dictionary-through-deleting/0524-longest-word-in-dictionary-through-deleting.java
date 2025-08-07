@@ -1,10 +1,11 @@
 class Solution {
     public String findLongestWord(String s, List<String> dictionary) {
-        Collections.sort(dictionary);
+        // Collections.sort(dictionary);
         String res= "";
         for(String str: dictionary){
             if(isEqualLength(s,str)){
-                if(res.length()<str.length()){
+                if(res.length()<str.length() || (res.length()==str.length() 
+                && str.compareTo(res) < 0 )){
                     res=str;
                 }
             }
