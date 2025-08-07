@@ -8,7 +8,6 @@ class Solution {
             if(!map.containsKey(sorted)) map.put(sorted, new ArrayList<>());
             map.get(sorted).add(str);
         }
-        List<List<String>> res = new ArrayList<>(map.values());
-        return res; 
+        return new ArrayList<>(map.values());
     }
 }
