@@ -13,7 +13,6 @@ class Solution {
             for(int p=0;p<arr.length;p++){
                 if(worker[i]>=arr[p][0]) maxProfit = Math.max(maxProfit,arr[p][1]);
             }
-            if(maxProfit==0) return 0;
             sum+=maxProfit;
         }
         return sum;
