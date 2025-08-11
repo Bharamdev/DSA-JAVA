@@ -5,9 +5,11 @@ class Solution {
         StringBuilder str = new StringBuilder();
         for(char ch: order.toCharArray()){
             if(map.containsKey(ch)){
-                str.append(ch);
-                map.put(ch,map.get(ch)-1);
-                if(map.get(ch)<=0) map.remove(ch);
+                int cnt=map.get(ch);
+                for(int i=0;i<cnt;i++){
+                    str.append(ch);
+                }
+                map.remove(ch);
             }
         }
         for(char key: map.keySet()){
