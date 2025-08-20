@@ -9,7 +9,6 @@ class Solution {
                 place++;
             }
         }
-        if((n-cnt)%2!=0) cnt++;
-        return cnt;
+        return (cnt + (n-cnt)%2);
     }
 }
