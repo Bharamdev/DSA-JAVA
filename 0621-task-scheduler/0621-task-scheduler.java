@@ -15,7 +15,7 @@ class Solution {
                 int cnt = pq.poll()-1;
                 if(cnt>0) q.offer(new int[]{cnt, time+n});
             }
-            if(!q.isEmpty() && q.peek()[1]<=time){
+            if(!q.isEmpty() && q.peek()[1]==time){
                 pq.offer(q.poll()[0]);
             }
         }
