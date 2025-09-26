@@ -1,6 +1,14 @@
 class Solution {
     public String removeOccurrences(String s, String part) {
-        while(s.contains(part)) s = s.replaceAll(part,"");
-        return s;
+        StringBuilder str = new StringBuilder();
+        int n=part.length();
+        for(char ch: s.toCharArray()){
+            str.append(ch);
+            int size = str.length();
+            if(size>=n){
+                if(str.substring(size-n).equals(part)) str.delete(size-n,size);
+            }
+        }
+        return str.toString();
     }
 }
