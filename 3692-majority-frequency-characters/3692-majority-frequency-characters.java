@@ -1,13 +1,13 @@
 class Solution {
     public String majorityFrequencyGroup(String s) {
         int[] freq = new int[26];
-        int[] size = new int[26];
+        int[] size = new int[101];
         for(char ch: s.toCharArray()) freq[ch-'a']++;
         for(int i: freq){
             if(i>0) size[i]++;
         }
         int maxFreq = 0, maxSize=0;
-        for(int i=0;i<26;i++){
+        for(int i=0;i<101;i++){
             int f = i;
             int S = size[i];
             if(S > maxSize || (S==maxSize && f>maxFreq)){
