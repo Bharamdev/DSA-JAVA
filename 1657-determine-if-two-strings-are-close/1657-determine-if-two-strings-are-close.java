@@ -3,11 +3,11 @@ class Solution {
         int[] f1 = new int[26];
         int[] f2 = new int[26];
         if(word1.length() != word2.length()) return false;
-        for(int i=0;i<word1.length();i++){
-            char c1 = word1.charAt(i);
-            char c2 = word2.charAt(i);
-            f1[c1-'a']++;
-            f2[c2-'a']++;
+        for(char c : word1.toCharArray()) {
+            f1[c - 'a']++;
+        }
+        for(char c : word2.toCharArray()) {
+            f2[c - 'a']++;
         }
         for(int i=0;i<26;i++){
             if((f1[i]==0 && f2[i]!=0 ) || (f1[i]!=0 && f2[i]==0)){
