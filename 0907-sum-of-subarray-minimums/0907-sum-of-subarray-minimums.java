@@ -9,7 +9,7 @@ class Solution {
         for(int i=0;i<arr.length;i++){
             long ps = i-pse[i]; // in Previous subarray
             long ns = nse[i]-i; // in next subarray
-            total = (total + (ps*ns % mod)*arr[i] % mod) % mod;
+            total = (total + (ps*ns*arr[i]) % mod) % mod;
         }
         return (int)total;
     }
