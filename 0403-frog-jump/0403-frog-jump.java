@@ -10,18 +10,18 @@ class Solution {
     boolean fn(int index, int k, int n, int[] stones, Set<Integer> set){
         if(index==stones[n-1] ) return true;
         String key = index+","+k;
-        if(map.containsKey(key)) return map.get(key);
+        if(memo.containsKey(key)) return memo.get(key);
         for(int jump=k-1; jump<=k+1; jump++){
             if(jump<=0) continue;
             int pos = index+jump;
             if(set.contains(pos)){
                 if(fn(pos, jump, n, stones, set)){
-                    map.put(key,true);
+                    memo.put(key,true);
                     return true;
                 }
             }
         }
-        map.put(key,false);
+        memo.put(key,false);
         return false;
     }
 }
