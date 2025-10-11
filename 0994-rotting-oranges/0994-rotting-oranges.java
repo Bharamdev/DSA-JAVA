@@ -4,6 +4,7 @@ class Solution {
     int n;
     int m;
     int cnt=-1;
+    int newFresh=0;
     class pair{
         int row;
         int col;
@@ -17,20 +18,19 @@ class Solution {
         m = grid[0].length;
         boolean[][] vis = new boolean[n][m];
         Queue<pair> q = new LinkedList<>();
+        int fresh=0;
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(!vis[i][j] && grid[i][j]==2){
                     vis[i][j] = true;
                     q.offer(new pair(i,j));
                 }
+                else if(grid[i][j]==1) fresh++;
             }
         }
         fn(q,vis,grid);
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                if(!vis[i][j] && grid[i][j]==1) return -1;
-            }
-        }
+        if(fresh!=newFresh) return -1;
+        
         return cnt==-1 ? 0 : cnt;
     }
     void fn(Queue<pair> q, boolean[][]vis, int[][] grid){
@@ -47,6 +47,7 @@ class Solution {
                        !vis[nr][nc] && grid[nr][nc]==1){
                          vis[nr][nc]=true;
                          q.offer(new pair(nr,nc));
+                         newFresh++;
                        }
                 }
             }
