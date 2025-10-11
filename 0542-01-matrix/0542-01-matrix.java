@@ -34,8 +34,9 @@ class Solution {
         while(!q.isEmpty()){
             int r = q.peek().row;
             int c = q.peek().col;
-            int step = q.poll().steps;
+            int step = q.peek().steps;
             ans[r][c] = step;
+            q.poll();
             for(int j=0;j<4;j++){
                 int nr = r+delrow[j];
                 int nc = c+delcol[j];
