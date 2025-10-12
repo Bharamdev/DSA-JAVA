@@ -1,0 +1,25 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1">Tree Boundary Traversal</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 14pt;">Given a <strong>root </strong>of a Binary Tree,&nbsp;<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">return its </span><strong style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" data-start="209" data-end="231">boundary traversal</strong><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"> in the following order:</span></span></p>
+<ol>
+<li>
+<p data-pm-slice="1 1 []"><span style="font-size: 14pt;"><strong>Left Boundary:</strong>&nbsp;<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Nodes from the root to the leftmost leaf (prefer left child over right). Exclude leaf nodes.</span></span></p>
+</li>
+<li>
+<p data-pm-slice="1 1 []"><span style="font-size: 14pt;"><strong>Leaf Nodes:</strong>&nbsp;<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">All leaf nodes from left to right, excluding those already in the left or right boundary.</span></span></p>
+</li>
+<li>
+<p data-pm-slice="1 1 []"><span style="font-size: 14pt;"><strong>Reverse Right Boundary:&nbsp;</strong><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Nodes from the rightmost leaf to the root (prefer right child over left). Exclude the root if already included in the left boundary.</span></span></p>
+</li>
+</ol>
+<p><span style="font-size: 14pt;"><strong>Note:</strong>&nbsp;</span><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 14pt;">If the root has no left or right subtree, consider the root itself as part of the respective boundary.</span></p>
+<p><span style="font-size: 14pt;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 14pt;"><strong>Input:</strong> root = [1, 2, 3, 4, 5, 6, 7, N, N, 8, 9, N, N, N, N]<strong>
+Output: </strong>[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">3</span>]<strong>
+Explanation:
+</strong><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/700204/Web/Other/blobid6_1749213679.webp" width="253" height="221"></span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>root = [1, N, 2, N, 3, N, 4, N, N] <strong>
+Output: </strong>[<span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>]
+<strong>Explanation:<br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/912584/Web/Other/blobid0_1759298509.jpg" width="215" height="215"><br></strong><span class="hljs-attr">Left boundary:</span> [<span class="hljs-number">1</span>] <span class="hljs-string">(as</span> <span class="hljs-string">there</span> <span class="hljs-string">is</span> <span class="hljs-literal">no</span> <span class="hljs-string">left</span> <span class="hljs-string">subtree)</span>
+<span class="hljs-attr">Leaf nodes:</span> [<span class="hljs-number">4</span>]
+<span class="hljs-attr">Right boundary:</span> [<span class="hljs-number">3</span>, <span class="hljs-number">2</span>] <span class="hljs-string">(in</span> <span class="hljs-string">reverse</span> <span class="hljs-string">order)</span>
+<span class="hljs-attr">Final traversal:</span> [<span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>]</span></pre>
+<p><span style="font-size: 14pt;"><strong>Constraints:</strong></span><br><span style="font-size: 14pt;">1 ≤ number of nodes ≤ 10<sup>5</sup></span><br><span style="font-size: 14pt;">1 ≤ node-&gt;data ≤ 10<sup>5</sup></span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Flipkart</code>&nbsp;<code>Morgan Stanley</code>&nbsp;<code>Accolite</code>&nbsp;<code>Amazon</code>&nbsp;<code>Microsoft</code>&nbsp;<code>OYO Rooms</code>&nbsp;<code>Samsung</code>&nbsp;<code>Snapdeal</code>&nbsp;<code>FactSet</code>&nbsp;<code>Hike</code>&nbsp;<code>Payu</code>&nbsp;<code>Kritikal Solutions</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Tree</code>&nbsp;<code>Data Structures</code>&nbsp;
