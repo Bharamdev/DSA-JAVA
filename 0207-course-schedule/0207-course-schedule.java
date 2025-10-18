@@ -20,7 +20,7 @@ class Solution {
             cnt++;
             for(int it: adj.get(node)){
                 inDegree[it]--;
-                if(inDegree[node]==0) q.offer(it);
+                if(inDegree[it]==0) q.offer(it);
             }
         }
         return v==cnt;
