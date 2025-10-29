@@ -1,0 +1,14 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/n-queen-problem0315/1">N-Queen Problem</a></h2><h3>Difficulty Level : Difficulty: Hard</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">The&nbsp;<strong>n</strong>-queens puzzle is the problem of placing n queens on a&nbsp;(<strong>n × n)</strong>&nbsp;chessboard such that no two queens can attack each other. Note that two queens attack each other if they are placed on the same row, the same column, or the same diagonal.</span></p>
+<p><span style="font-size: 18px;">Given an integer&nbsp;<strong>n</strong>, find all distinct solutions to the&nbsp;<strong>n-queens puzzle</strong>.<br>You can return your answer in&nbsp;<strong>any&nbsp;</strong>order but e</span><span style="font-size: 18px;">ach solution should represent a distinct board configuration of the queen placements, where the solutions are represented as permutations of [1, 2, 3, ..., n]. </span></p>
+<p><span style="font-size: 18px;">In this representation, the number in the&nbsp;<strong>ith&nbsp;</strong>position denotes the column in which the queen is placed in the&nbsp;<strong>ith&nbsp;</strong>row.<br></span><span style="font-size: 18px;">For eg. below figure represents a chessboard&nbsp;<strong>[2, 4, 1, 3]</strong>.</span><span style="font-size: 18px;"><br><span style="font-size: 18px; height: 201px; width: 231px;"><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/705336/Web/Other/blobid0_1759217621.jpg" width="193" height="200"></span></span></p>
+<p><strong><span style="font-size: 18px;">Examples:</span></strong></p>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>n = 1
+<strong>Output: </strong>[1]
+<strong>Explaination: </strong>Only one queen can be placed in the single cell available.</span></pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>n =<strong> </strong>4
+<strong>Output: </strong>[[2, 4, 1, 3], [3, 1, 4, 2]]
+<strong>Explaination: </strong>There are 2 possible solutions for n = 4.<br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/705336/Web/Other/blobid1_1759217689.webp" width="375" height="181"><br></span></pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>n =<strong> </strong>3
+<strong>Output: </strong>[]
+<strong>Explaination: </strong>There are no possible solutions for n = 3.</span></pre>
+<p><strong style="font-size: 18px;">Constraints:<br></strong><span style="font-size: 18px;">1 ≤ n ≤ 10</span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Accolite</code>&nbsp;<code>Amazon</code>&nbsp;<code>Microsoft</code>&nbsp;<code>D-E-Shaw</code>&nbsp;<code>Visa</code>&nbsp;<code>MAQ Software</code>&nbsp;<code>Amdocs</code>&nbsp;<code>Twitter</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Backtracking</code>&nbsp;<code>Algorithms</code>&nbsp;
