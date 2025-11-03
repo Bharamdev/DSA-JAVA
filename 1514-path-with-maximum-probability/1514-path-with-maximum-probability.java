@@ -19,7 +19,7 @@ class Solution {
         }
         double[] dist = new double[n];
         Arrays.fill(dist,0.0);
-        dist[start_node]=0.0;
+        dist[start_node]=1.0;
         PriorityQueue<pair> pq = new PriorityQueue<>((a,b) -> 
                                      Double.compare(b.prob,a.prob));
         pq.offer(new pair(1,start_node));
