@@ -25,6 +25,7 @@ class Solution {
                     }
                     else if(parent[node]!=it){
                         ans = Math.min(ans, dist[node]+dist[it]+1);
+                        if(ans==3) return 3;
                     }
                 }
             }
