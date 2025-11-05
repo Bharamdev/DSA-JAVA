@@ -1,4 +1,5 @@
 class Solution {
+    int ans;
     public int findShortestCycle(int n, int[][] edges) {
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         for (int i = 0; i < n; i++) adj.add(new ArrayList<>());
@@ -6,9 +7,15 @@ class Solution {
             adj.get(e[0]).add(e[1]);
             adj.get(e[1]).add(e[0]);
         }
-        int ans = Integer.MAX_VALUE;
+        ans = Integer.MAX_VALUE;
         for(int s=0;s<n;s++){
-            Queue<Integer> q = new LinkedList<>();
+            bfs(s,adj,n);
+            if(ans==3) return ans;
+        }
+        return ans==Integer.MAX_VALUE ? -1 : ans;
+    }
+    void bfs(int s, ArrayList<ArrayList<Integer>> adj, int n){
+        Queue<Integer> q = new LinkedList<>();
             int[] dist = new int[n];
             Arrays.fill(dist, -1);
             int[] parent = new int[n];
@@ -25,11 +32,9 @@ class Solution {
                     }
                     else if(parent[node]!=it){
                         ans = Math.min(ans, dist[node]+dist[it]+1);
-                        if(ans==3) return 3;
+                        // if(ans==3) return 3;
                     }
                 }
             }
-        }
-        return ans==Integer.MAX_VALUE ? -1 : ans;
     }
 }
