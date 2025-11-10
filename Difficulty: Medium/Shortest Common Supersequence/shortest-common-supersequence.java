@@ -1,9 +1,6 @@
-// User function Template for Java
-
 class Solution {
-    // Function to find length of shortest common supersequence of two strings.
-    public static int shortestCommonSupersequence(String s1, String s2) {
-        // Your code here
+    public static int minSuperSeq(String s1, String s2) {
+        // code here
         int n=s1.length();
         int m=s2.length();
         int totalLen = n+m;
