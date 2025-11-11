@@ -30,6 +30,7 @@ class Solution {
             n = Math.max(n, stone[0]);
             m = Math.max(m, stone[1]);
         }
+        // You computed n = max(row index) and m = max(col index). These are maximum indices, not counts. If max row index is 4, there are 5 rows (0..4). You must use rows = maxRow + 1
         n=n+1;
         m=m+1;
         disjoint ds = new disjoint(n+m);
