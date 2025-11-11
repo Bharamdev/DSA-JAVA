@@ -30,6 +30,8 @@ class Solution {
             n = Math.max(n, stone[0]);
             m = Math.max(m, stone[1]);
         }
+        n=n+1;
+        m=m+1;
         disjoint ds = new disjoint(n+m);
         HashMap<Integer,Integer> map = new HashMap<>();
         for(int[] stone: stones){
