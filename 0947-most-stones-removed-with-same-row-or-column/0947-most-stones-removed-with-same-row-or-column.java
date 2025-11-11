@@ -2,8 +2,8 @@ class disjoint{
     int[] parent;
     int[] rank;
     disjoint(int n){
-        parent = new int[n+1];
-        rank = new int[n+1];
+        parent = new int[n];
+        rank = new int[n];
         for(int i=0;i<n;i++) parent[i]=i;
     }
     int findparent(int node){
