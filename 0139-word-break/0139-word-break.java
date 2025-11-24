@@ -1,8 +1,8 @@
 class Solution {
-    Set<String> set = new HashSet<>();
+    Set<String> set;
     Map<String, Boolean> memo = new HashMap<>();
     public boolean wordBreak(String s, List<String> wordDict) {
-        for(String str: wordDict) set.add(str);
+        set = new HashSet<>(wordDict);
         return  fn(s);
     }
     boolean fn(String s){
