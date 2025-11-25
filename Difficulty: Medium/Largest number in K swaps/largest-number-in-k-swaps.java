@@ -12,8 +12,12 @@ class Solution {
         if(s.compareTo(max) > 0) max = s;
         if(k==0) return;
         for(int i=0;i<s.length()-1;i++){
+            char maxDigit = s.charAt(i);
+            for(int j=i+1;j<s.length();j++){
+                if(s.charAt(j)>maxDigit) maxDigit=s.charAt(j);
+            }
             for(int j=i+1; j<s.length();j++){
-                if(s.charAt(j) > s.charAt(i)){
+                if(s.charAt(j)==maxDigit && s.charAt(i)!=maxDigit){
                     String swapped = swap(s, i, j);
                     fn(swapped, k-1);
                 }
