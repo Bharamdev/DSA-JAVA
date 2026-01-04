@@ -9,10 +9,17 @@ class Solution {
     int solve(int num){
         int sum=0;
         int cnt=0;
-        for(int i=1;i<=num;i++){
+        for(int i=1;i*i<=num;i++){
             if(num%i==0) {
-                cnt++;
-                sum+=i;
+                int d1 = i, d2 = num/i;
+                if(d1==d2){
+                    sum+=d1;
+                    cnt++;
+                }
+                else{
+                    cnt+=2;
+                    sum+=d1+d2;
+                }
             }
             if(cnt>4) return 0;
         }
