@@ -13,3 +13,31 @@ This repo is built to track my progress, help others preparing for interviews, a
 
 Leetcode: https://leetcode.com/u/Bharam_dev2/  
 GFG: https://www.geeksforgeeks.org/user/bharamdev/
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Bharamdev/DSA-JAVA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Bharamdev/DSA-JAVA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Bharamdev/DSA-JAVA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
+## Heap (Priority Queue)
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Bharamdev/DSA-JAVA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
+## Matrix
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Bharamdev/DSA-JAVA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
+## Prefix Sum
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Bharamdev/DSA-JAVA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
+<!---LeetCode Topics End-->
