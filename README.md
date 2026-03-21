@@ -20,6 +20,7 @@ GFG: https://www.geeksforgeeks.org/user/bharamdev/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Bharamdev/DSA-JAVA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
+| [3643-flip-square-submatrix-vertically](https://github.com/Bharamdev/DSA-JAVA/tree/main/3643-flip-square-submatrix-vertically/) | Easy |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -36,8 +37,13 @@ GFG: https://www.geeksforgeeks.org/user/bharamdev/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Bharamdev/DSA-JAVA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
+| [3643-flip-square-submatrix-vertically](https://github.com/Bharamdev/DSA-JAVA/tree/main/3643-flip-square-submatrix-vertically/) | Easy |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Bharamdev/DSA-JAVA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3643-flip-square-submatrix-vertically](https://github.com/Bharamdev/DSA-JAVA/tree/main/3643-flip-square-submatrix-vertically/) | Easy |
 <!---LeetCode Topics End-->
